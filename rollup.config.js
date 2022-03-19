@@ -1,4 +1,4 @@
-import babel from 'rollup-plugin-babel';
+import babel from "rollup-plugin-babel";
 
 let banner = `/*
  * charts for WeChat small app v1.0
@@ -11,13 +11,13 @@ let banner = `/*
 `;
 
 export default {
-  entry: 'src/app.js',
-  format: 'cjs',
-  dest: 'dist/wxcharts.js',
+  entry: "src/app.js",
+  format: "cjs",
+  dest: "dist/index.js",
   plugins: [
-      babel({
-          exclude: 'node_modules/**',
-      })
+    babel({
+      exclude: "node_modules/**",
+    }),
   ],
-  banner: banner
+  banner: banner,
 };

@@ -1,5 +1,5 @@
-import babel from 'rollup-plugin-babel';
-import uglify from 'rollup-plugin-uglify';
+import babel from "rollup-plugin-babel";
+import uglify from "rollup-plugin-uglify";
 
 let banner = `/*
  * charts for WeChat small app v1.0
@@ -12,14 +12,14 @@ let banner = `/*
 `;
 
 export default {
-  entry: 'src/app.js',
-  format: 'cjs',
-  dest: 'dist/wxcharts-min.js',
+  entry: "src/app.js",
+  format: "cjs",
+  dest: "dist/index.js",
   plugins: [
-      babel({
-          exclude: 'node_modules/**',
-      }),
-      uglify()
+    babel({
+      exclude: "node_modules/**",
+    }),
+    uglify(),
   ],
-  banner: banner
+  banner: banner,
 };

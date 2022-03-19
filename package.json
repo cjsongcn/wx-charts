@@ -12,10 +12,12 @@
     "rollup-plugin-uglify": "^1.0.1"
   },
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "scripts": {
-    "build": "rollup -c && rollup --config rollup.config.prod.js"
+    "build": "rollup -c",
+    "build-prod": "rollup --config rollup.config.prod.js"
   },
   "repository": {
     "type": "git",
