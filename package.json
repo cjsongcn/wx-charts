@@ -1,5 +1,5 @@
 {
-  "name": "wechat-charts-2d",
+  "name": "@ygp/wx-charts",
   "version": "1.0.0",
   "description": "charts for wechat small app",
   "main": "src/app.js",
