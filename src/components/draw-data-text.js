@@ -23,7 +23,7 @@ export function drawRingTitle(opts, config, context) {
       startY -= (titleHeight + margin) / 2;
     }
     context.beginPath();
-    context.font = subtitlefontSize;
+    context.font = subtitlefontSize + "px";
     context.fillStyle = subtitleFontColor;
     context.fillText(subtitle, startX, startY);
     context.stroke();
@@ -37,7 +37,7 @@ export function drawRingTitle(opts, config, context) {
       startY += (subtitleHeight + margin) / 2;
     }
     context.beginPath();
-    context.font = titlefontSize;
+    context.font = titlefontSize + "px";
     context.fillStyle = titleFontColor;
     context.fillText(title, startX, startY);
     context.stroke();
@@ -50,7 +50,7 @@ export function drawPointText(points, series, config, context) {
   let data = series.data;
 
   context.beginPath();
-  context.font = config.fontSize;
+  context.font = config.fontSize + "px";
   context.fillStyle = "#666666";
   points.forEach(function (item, index) {
     if (item !== null) {
@@ -77,7 +77,7 @@ export function drawRadarLabel(
   let radarOption = opts.extra.radar || {};
   radius += config.radarLabelTextMargin;
   context.beginPath();
-  context.font = config.fontSize;
+  context.font = config.fontSize + "px";
   context.fillStyle = radarOption.labelColor || "#666666";
   angleList.forEach((angle, index) => {
     let pos = {
@@ -201,7 +201,7 @@ export function drawPieText(series, opts, config, context, radius, center) {
       center
     );
     context.lineWidth = 1;
-    context.font = config.fontSize;
+    context.font = config.fontSize + "px";
     context.beginPath();
     context.strokeStyle = item.color;
     context.fillStyle = item.color;

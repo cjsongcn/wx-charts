@@ -4,8 +4,8 @@ import uglify from "rollup-plugin-uglify";
 let banner = `/*
  * charts for WeChat small app v1.0
  *
- * https://github.com/xiaolin3303/wx-charts
- * 2016-11-28
+* https://github.com/cjsongcn/wx-charts
+* 2022-03-219
  *
  * Designed and built with all the love of Web
  */

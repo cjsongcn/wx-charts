@@ -99,7 +99,7 @@ export function drawToolTip(textList, offset, opts, config, context) {
 
   // draw text list
   context.beginPath();
-  context.font = config.fontSize;
+  context.font = config.fontSize + "px";
   context.fillStyle = "#ffffff";
   textList.forEach((item, index) => {
     let startX =

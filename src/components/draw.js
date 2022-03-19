@@ -33,7 +33,7 @@ function drawYAxisTitle(title, opts, config, context) {
     (opts.height - config.xAxisHeight - measureText(title)) / 2;
   context.save();
   context.beginPath();
-  context.font = config.fontSize;
+  context.font = config.fontSize + "px";
   context.fillStyle = opts.yAxis.titleFontColor || "#333333";
   context.translate(0, opts.height);
   context.rotate((-90 * Math.PI) / 180);
@@ -462,7 +462,7 @@ export function drawXAxis(categories, opts, config, context) {
 
   if (config._xAxisTextAngle_ === 0) {
     context.beginPath();
-    context.font = config.fontSize;
+    context.font = config.fontSize + "px";
     context.fillStyle = opts.xAxis.fontColor || "#666666";
     categories.forEach(function (item, index) {
       let offset = eachSpacing / 2 - measureText(item) / 2;
@@ -478,7 +478,7 @@ export function drawXAxis(categories, opts, config, context) {
     categories.forEach(function (item, index) {
       context.save();
       context.beginPath();
-      context.font = config.fontSize;
+      context.font = config.fontSize + "px";
       context.fillStyle = opts.xAxis.fontColor || "#666666";
       let textWidth = measureText(item);
       let offset = eachSpacing / 2 - textWidth;
@@ -558,7 +558,7 @@ export function drawYAxis(series, opts, config, context) {
 
   context.stroke();
   context.beginPath();
-  context.font = config.fontSize;
+  context.font = config.fontSize + "px";
   context.fillStyle = opts.yAxis.fontColor || "#666666";
   rangesFormat.forEach(function (item, index) {
     let pos = points[index] ? points[index] : endY;
