@@ -34,9 +34,22 @@
 
 # 如何使用
 
-1、直接引用编译好的文件 `dist/wxcharts.js` 或者 `dist/wxcharts-min.js`
+1、npm 包安装
 
-2、自行编译
+```
+npm install @ygp/wx-charts -S
+
+```
+
+开发者工具：工具 -> 构建 npm
+
+```
+import wxCharts from '@ygp/wx-charts'
+```
+
+2、直接引用编译好的文件 `dist/wxcharts.js` 或者 `dist/wxcharts-min.js`
+
+3、自行编译
 
 ```
 git clone https://github.com/xiaolin3303/wx-charts.git
