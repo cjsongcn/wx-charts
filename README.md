@@ -1,41 +1,39 @@
 # wx-charts
+
 微信小程序图表工具，charts for WeChat small app
 
-基于canvas绘制，体积小巧
-
-**持续优化更新中，请保持关注~ 有任何问题欢迎在[Issues](https://github.com/xiaolin3303/wx-charts/issues)中讨论，[提出issue前请先阅读此须知](https://github.com/xiaolin3303/wx-charts/issues/67)**
-
-
-字节跳动大量招聘前端开发工程师（初级、高级、资深、Leader），坐标北京、上海、深圳、杭州、成都、武汉、广州、南京，感兴趣的朋友请点击[此处](https://job.toutiao.com/referral/pc/position/share/?token=MjsxNTcxOTg2MjM0Mzg3OzY3MDY0NTM0ODA3NTQwNzEwNDM7Njc1MTYwOTUzNDc5MDY4Mjg4OA%3D%3D)进行投递
-
+基于 canvas 2d 绘制，支持同层渲染，体积小巧，压缩后仅为 33kb
 
 # 支持图表类型
-- 饼图   `pie`
+
+- 饼图 `pie`
 - 圆环图 `ring`
-- 线图   `line`
+- 线图 `line`
 - 柱状图 `column`
 - 区域图 `area`
 - 雷达图 `radar`
 
 代码分析 [Here](https://segmentfault.com/a/1190000007649376)
 
-# 更新记录 
+# 更新记录
 
+- [ ] canvas 2d 支持 2022-03-19
 - [ ] 动画性能优化
-- [x] 图表滚动的支持，感谢[@jxintang](https://github.com/jxintang)
-- [x] [优化曲线绘制](https://github.com/xiaolin3303/wx-charts/issues/79)
+- [x] 图表滚动的支持，
+- [x] [优化曲线绘制]
 - [x] 新增雷达图 2017-03-17
-- [x] 新增tooltip 2017-03-07
+- [x] 新增 tooltip 2017-03-07
 - [x] 新增曲线的绘制 2017-03-06
 - [x] 新增更新数据、终止进行中的动画方法，渲染完成事件回调 2017-02-17
-- [x] 新增圆环图title, subtitle 2017-01-10
-- [x] x轴文案碰撞避让 2016-12-30
-- [x] add pie chart dataLabel  2016-12-19
-- [x] add animation  2016-12-05
+- [x] 新增圆环图 title, subtitle 2017-01-10
+- [x] x 轴文案碰撞避让 2016-12-30
+- [x] add pie chart dataLabel 2016-12-19
+- [x] add animation 2016-12-05
 - [x] build with `rollup` 2016-12-02
-- [x] add legend  2016-11-29
+- [x] add legend 2016-11-29
 
 # 如何使用
+
 1、直接引用编译好的文件 `dist/wxcharts.js` 或者 `dist/wxcharts-min.js`
 
 2、自行编译
@@ -46,15 +44,16 @@ npm install rollup -g
 npm install
 rollup -c 或者 rollup --config rollup.config.prod.js
 ```
-[实际项目中如何具体使用wx-charts](https://github.com/xiaolin3303/wx-charts/issues/28) 或者 访问[wx-charts-demo](https://github.com/xiaolin3303/wx-charts-demo)查看在微信开发工具中直接运行的例子
+
+[实际项目中如何具体使用 wx-charts](https://github.com/xiaolin3303/wx-charts/issues/28) 或者 访问[wx-charts-demo](https://github.com/xiaolin3303/wx-charts-demo)查看在微信开发工具中直接运行的例子
 
 # 参数说明
 
-[参数说明 - wxCharts使用文档](https://github.com/xiaolin3303/wx-charts/issues/56)
+[参数说明 - wxCharts 使用文档](https://github.com/xiaolin3303/wx-charts/issues/56)
 
 # 方法 & 事件
 
-[方法 & 事件 - wxCharts使用说明](https://github.com/xiaolin3303/wx-charts/issues/57)
+[方法 & 事件 - wxCharts 使用说明](https://github.com/xiaolin3303/wx-charts/issues/57)
 
 # Example
 
@@ -74,14 +73,16 @@ rollup -c 或者 rollup --config rollup.config.prod.js
 ![tooltip](https://raw.githubusercontent.com/xiaolin3303/wx-charts/master/example/tooltip.gif)
 ![scrollLineChart](https://raw.githubusercontent.com/xiaolin3303/wx-charts/master/example/scrollLine.gif)
 
-更多内容请查看[Example - wxCharts使用说明](https://github.com/xiaolin3303/wx-charts/issues/58)
+更多内容请查看[Example - wxCharts 使用说明](https://github.com/xiaolin3303/wx-charts/issues/58)
 
-# 测试 
+# 测试
+
 1. iPhone 6s, IOS 9.3.5
-2. 小米4, ANDORID 6.0.1
+2. 小米 4, ANDORID 6.0.1
 
 兼容性问题请在[Issue](https://github.com/xiaolin3303/wx-charts/issues)中提出
 
 # 一些问题的说明汇总
-- [wx-charts自适应屏幕宽度的问题](https://github.com/xiaolin3303/wx-charts/issues/4)
-- [项目中如何具体使用wxCharts](https://github.com/xiaolin3303/wx-charts/issues/28)
+
+- [wx-charts 自适应屏幕宽度的问题](https://github.com/xiaolin3303/wx-charts/issues/4)
+- [项目中如何具体使用 wxCharts](https://github.com/xiaolin3303/wx-charts/issues/28)
