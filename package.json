@@ -2,7 +2,7 @@
   "name": "@ygp/wx-charts",
   "version": "1.0.0",
   "description": "charts for wechat small app",
-  "main": "src/app.js",
+  "main": "dist/wxcharts.js",
   "dependencies": {},
   "devDependencies": {
     "babel-plugin-external-helpers": "^6.18.0",
@@ -21,7 +21,7 @@
     "type": "git",
     "url": "git+https://github.com/cjsongcn/wx-charts"
   },
-  "miniprogram": "dist/wxcharts-min.js",
+  "miniprogram": "dist",
   "keywords": [
     "wechat charts"
   ],
