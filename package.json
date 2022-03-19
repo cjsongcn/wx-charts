@@ -1,6 +1,6 @@
 {
   "name": "@ygp/wx-charts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "charts for wechat small app",
   "main": "dist/wxcharts.js",
   "dependencies": {},
