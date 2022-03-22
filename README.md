@@ -139,7 +139,6 @@ Component({
 ```js
 opts Object
 
-opts.canvasId String required 微信小程序canvas-id
 
 opts.width Number required canvas宽度，单位为px
 
