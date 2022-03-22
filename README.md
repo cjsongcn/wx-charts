@@ -25,7 +25,7 @@
 1、npm 包安装
 
 ```js
-npm install @ygp/wx-charts -S
+npm install @ygp/wx-charts --registry http://npm.yigongpin.net/
 
 ```
 
