@@ -603,7 +603,7 @@ export function drawLegend(series, opts, config, context) {
       padding +
       marginTop;
 
-    context.font = config.fontSize;
+    context.font = config.fontSize + "px Arial";
     itemList.forEach(function (item) {
       switch (opts.type) {
         case "line":

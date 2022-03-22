@@ -23,7 +23,7 @@ export function drawRingTitle(opts, config, context) {
       startY -= (titleHeight + margin) / 2;
     }
     context.beginPath();
-    context.font = subtitlefontSize + "px";
+    context.font = subtitlefontSize + "px Arial";
     context.fillStyle = subtitleFontColor;
     context.fillText(subtitle, startX, startY);
     context.stroke();
@@ -37,7 +37,7 @@ export function drawRingTitle(opts, config, context) {
       startY += (subtitleHeight + margin) / 2;
     }
     context.beginPath();
-    context.font = titlefontSize + "px";
+    context.font = titlefontSize + "px Arial";
     context.fillStyle = titleFontColor;
     context.fillText(title, startX, startY);
     context.stroke();
@@ -50,7 +50,7 @@ export function drawPointText(points, series, config, context) {
   let data = series.data;
 
   context.beginPath();
-  context.font = config.fontSize + "px";
+  context.font = config.fontSize + "px Arial";
   context.fillStyle = "#666666";
   points.forEach(function (item, index) {
     if (item !== null) {

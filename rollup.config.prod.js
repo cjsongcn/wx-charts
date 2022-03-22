@@ -5,7 +5,7 @@ let banner = `/*
  * charts for WeChat small app v1.0
  *
 * https://github.com/cjsongcn/wx-charts
-* 2022-03-219
+* 2022-03-21
  *
  * Designed and built with all the love of Web
  */
@@ -14,7 +14,7 @@ let banner = `/*
 export default {
   entry: "src/app.js",
   format: "cjs",
-  dest: "dist/index.js",
+  dest: "lib/index.js",
   plugins: [
     babel({
       exclude: "node_modules/**",

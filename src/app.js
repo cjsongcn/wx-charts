@@ -57,6 +57,8 @@ let Charts = function (opts, _component) {
       canvas.height = res[0].height * dpr;
       ctx.scale(dpr, dpr);
 
+      this.context = ctx;
+
       drawCharts.call(this, opts.type, opts, config$$1, ctx);
     });
 };

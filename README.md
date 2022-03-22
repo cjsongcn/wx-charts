@@ -52,7 +52,7 @@ import wxCharts from '@ygp/wx-charts'
 3、自行编译
 
 ```
-git clone https://github.com/xiaolin3303/wx-charts.git
+git clone https://github.com/cjsongcn/wx-charts
 npm install rollup -g
 npm install
 rollup -c 或者 rollup --config rollup.config.prod.js

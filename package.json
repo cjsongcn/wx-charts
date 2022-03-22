@@ -12,7 +12,7 @@
     "rollup-plugin-uglify": "^1.0.1"
   },
   "files": [
-    "dist",
+    "lib",
     "src"
   ],
   "scripts": {
@@ -23,7 +23,7 @@
     "type": "git",
     "url": "git+https://github.com/cjsongcn/wx-charts"
   },
-  "miniprogram": "dist",
+  "miniprogram": "lib",
   "keywords": [
     "wechat charts"
   ],
