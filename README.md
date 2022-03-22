@@ -31,10 +31,6 @@ npm install @ygp/wx-charts --registry http://npm.yigongpin.net/
 
 开发者工具：工具 -> 构建 npm
 
-```js
-import wxCharts from "@ygp/wx-charts";
-```
-
 json 配置引入
 
 ```json
