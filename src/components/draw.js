@@ -852,5 +852,5 @@ export function drawRadarDataPoints(
 }
 
 export function drawCanvas(opts, context) {
-  //context.draw();
+  // context.clearRect(0, 0, opts.width, opts.height);
 }

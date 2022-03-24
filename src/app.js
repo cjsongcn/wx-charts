@@ -39,13 +39,13 @@ let Charts = function (opts, _component) {
     distance: 0,
   };
 
-  const query = _component
+  this.query = _component
     ? _component.createSelectorQuery()
     : wx.createSelectorQuery();
   // store calcuated chart data
   // such as chart point coordinate
 
-  query
+  this.query
     .select(opts.canvasId)
     .fields({ node: true, size: true })
     .exec((res) => {
@@ -57,7 +57,7 @@ let Charts = function (opts, _component) {
       canvas.height = res[0].height * dpr;
       ctx.scale(dpr, dpr);
 
-      this.context = ctx;
+      //this.context = ctx;
 
       drawCharts.call(this, opts.type, opts, config$$1, ctx);
     });
@@ -69,8 +69,20 @@ Charts.prototype.updateData = function (data = {}) {
 
   this.opts.title = assign({}, this.opts.title, data.title || {});
   this.opts.subtitle = assign({}, this.opts.subtitle, data.subtitle || {});
+  this.query
+    .select(this.opts.canvasId)
+    .fields({ node: true, size: true })
+    .exec((res) => {
+      const canvas = res[0].node;
+      const ctx = canvas.getContext("2d");
 
-  drawCharts.call(this, this.opts.type, this.opts, this.config, this.context);
+      const dpr = wx.getSystemInfoSync().pixelRatio;
+      canvas.width = res[0].width * dpr;
+      canvas.height = res[0].height * dpr;
+      ctx.scale(dpr, dpr);
+
+      drawCharts.call(this, this.opts.type, this.opts, this.config, ctx);
+    });
 };
 
 Charts.prototype.stopAnimation = function () {
