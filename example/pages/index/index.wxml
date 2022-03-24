@@ -1,0 +1,3 @@
+<!-- pages/index/index.wxml -->
+<tran-column-chart config="{{config}}" width="320" height="300"></tran-column-chart>
+<column-chart config="{{config}}" width="320" height="300"></column-chart>

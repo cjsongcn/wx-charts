@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "usingComponents": {
+    "area-chart": "./components/areaChart/index",
+    "column-chart": "./components/columnChart/index",
+    "line-chart": "./components/lineChart/index",
+    "pie-chart": "./components/pieChart/index",
+    "radar-chart": "./components/radarChart/index",
+    "ring-chart": "./components/ringChart/index",
+    "tran-column-chart": "./components/tranColumnChart/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

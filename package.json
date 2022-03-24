@@ -16,6 +16,7 @@
     "src"
   ],
   "scripts": {
+    "dev": "rollup --config rollup.config.dev.js -w",
     "build": "rollup -c",
     "build-prod": "rollup --config rollup.config.prod.js"
   },
