@@ -39,13 +39,17 @@ let Charts = function (opts, _component) {
     distance: 0,
   };
 
-  this.query = _component
-    ? _component.createSelectorQuery()
-    : wx.createSelectorQuery();
+  if (opts.ctx) {
+    drawCharts.call(this, opts.type, opts, config$$1, ctx);
+  }
+
+  // this.query = _component
+  //   ? _component.createSelectorQuery()
+  //   : wx.createSelectorQuery();
   // store calcuated chart data
   // such as chart point coordinate
 
-  this.query
+  /* this.query
     .select(opts.canvasId)
     .fields({ node: true, size: true })
     .exec((res) => {
@@ -60,7 +64,7 @@ let Charts = function (opts, _component) {
       //this.context = ctx;
 
       drawCharts.call(this, opts.type, opts, config$$1, ctx);
-    });
+    }); */
 };
 
 Charts.prototype.updateData = function (data = {}) {
@@ -69,7 +73,16 @@ Charts.prototype.updateData = function (data = {}) {
 
   this.opts.title = assign({}, this.opts.title, data.title || {});
   this.opts.subtitle = assign({}, this.opts.subtitle, data.subtitle || {});
-  this.query
+  if (this.opts.ctx) {
+    drawCharts.call(
+      this,
+      this.opts.type,
+      this.opts,
+      this.config,
+      this.opts.ctx
+    );
+  }
+  /* this.query
     .select(this.opts.canvasId)
     .fields({ node: true, size: true })
     .exec((res) => {
@@ -82,7 +95,7 @@ Charts.prototype.updateData = function (data = {}) {
       ctx.scale(dpr, dpr);
 
       drawCharts.call(this, this.opts.type, this.opts, this.config, ctx);
-    });
+    }); */
 };
 
 Charts.prototype.stopAnimation = function () {
